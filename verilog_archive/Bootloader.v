@@ -1,3 +1,14 @@
+//
+// ======================================================================================
+// Copyright (c) Empty Quarter Semiconductor Co. - EQSemi
+// All rights reserved.
+// Project       : EQ-SSPC
+// Module        : Bootloader
+// Author(s)     : Group 5
+// Last Modified : 29 April 2026
+//
+// ======================================================================================
+
 `timescale 1ns/1ps
 
 module Bootloader #(

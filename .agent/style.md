@@ -33,4 +33,17 @@ This document outlines the coding standards and naming conventions for the Syste
 - **Clean Runs**: Always run with the `-clean` flag in `xrun` to avoid stale snapshot issues.
 
 ## 5. Metadata
-- Every file should start with a standard header including the project name, module name, and authorship.
+- Every file must start with the following standard header:
+
+```verilog
+//
+// ======================================================================================
+// Copyright (c) Empty Quarter Semiconductor Co. - EQSemi
+// All rights reserved.
+// Project       : EQ-SSPC
+// Module        : 
+// Author(s)     : Group 5
+// Last Modified : 29 April 2026
+//
+// ======================================================================================
+```

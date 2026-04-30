@@ -3,7 +3,5 @@
 *.d
 *.vcd
 *.key
-*.shm/
-xrun.history
-xrun.key
-xrun.log
+*.shm
+*.simvision
