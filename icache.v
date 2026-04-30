@@ -1,3 +1,5 @@
+`timescale 1ns/1ps
+
 module icache (
     input  wire        clk,                       // System clock for synchronous write port
     input  wire        o_enable_from_boot_loader,  // Gate for read output. 0 forces output to 0x00000000
