@@ -2,12 +2,13 @@
 // ======================================================================================
 // Copyright (c) Empty Quarter Semiconductor Co. - EQSemi
 // All rights reserved.
-// Project       : EQ-SSPC
-// Module        : CLOCK_GATE - Glitch-free generic clock gating block
-// Author(s)     : Group 5
+// Project       : EQ-SSPC
+// Module        : CLOCK_GATE - Glitch-free generic clock gating block
+// Author(s)     : Group 5
 // Last Modified : 29 April 2026
 //
 // ======================================================================================
+
 
 module CLOCK_GATE (
     input  wire clk,   // Source clock
@@ -15,7 +16,9 @@ module CLOCK_GATE (
     output wire gclk   // Gated clock
 );
 
+
     reg en_latched;
+
 
     // -------------------------------------------------------------------------
     // Latch enable only while clock is low
@@ -26,9 +29,11 @@ module CLOCK_GATE (
             en_latched = en;
     end
 
+
     // -------------------------------------------------------------------------
     // Gated clock output
     // -------------------------------------------------------------------------
     assign gclk = clk & en_latched;
+
 
 endmodule
