@@ -25,4 +25,6 @@ assign cache_read_data = cache[icache_raddr];
 // Output gating: if o_enable_from_boot_loader is 1, output cache data; else output 0
 assign risc_instruction = o_enable_from_boot_loader ? cache_read_data : 32'h00000000;
 
+
+
 endmodule
